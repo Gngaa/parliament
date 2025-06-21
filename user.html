@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
     <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
     <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+    <link href="assets/vendors/nice-select/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <title>Bookjar</title>
@@ -33,6 +34,90 @@
         </div>
     </div>
     <div class="body_wrapper">
+
+        <div class="click_capture"></div>
+
+        <div class="side_menu menu-opened">
+            <div class="sidebar_address_widget">
+                <div class="widget_title">
+                    Edit Address
+                </div>
+                <div class="bj_checkout_content border-0 m-0 rounded-0">
+                    <div class="porduct_pickup_location_wrapper mb-4 flex-wrap">
+                        <div class="w-100">Pick up your parcel from:</div>
+                        <div class="form-check mb-0">
+                            <input class="form-check-input" type="radio" name="porduct_pickup_location" id="flexRadioDefault1">
+                            <label class="ms-2 mt-1" for="flexRadioDefault1">
+                                Home
+                            </label>
+                        </div>
+                        <div class="form-check mb-0">
+                            <input class="form-check-input" type="radio" name="porduct_pickup_location" id="flexRadioDefault2" checked>
+                            <label class="ms-2 mt-1" for="flexRadioDefault2">
+                                Office
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="name" required value="Muaz BK">
+                        <label class="floating-label">Full Name *</label>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="phone_no" required value="01700000000">
+                        <label class="floating-label">Phone No *</label>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="alternative_phone_no" required value="01700000000">
+                        <label class="floating-label">Alternative Phone No </label>
+                    </div>
+                    <div class="form-group mb-4 floating-select">
+                        <label class="floating-label">Country </label>
+                        <select class="selectpickers">
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="United States" selected>United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4 floating-select">
+                        <label class="floating-label">City </label>
+                        <select class="selectpickers">
+                            <option value="Select City" disabled>Select City
+                            </option>
+                            <option value="New York" selected>New York</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4 floating-select">
+                        <label class="floating-label">Area </label>
+                        <select class="select selectpickers">
+                            <option value="Select Area" disabled>Select Area
+                            </option>
+                            <option value="New York" selected>New York</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea class="form-control message" required>123 Main Street, Apt 4B New York, NY 10001</textarea>
+                        <label class="floating-label">Address</label>
+                    </div>
+                    <div class="text-start mb-4">
+                        <button type="submit" class="bj_theme_btn">Save Address</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <div class="toast-container position-fixed p-3">
             <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -145,7 +230,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a href="my-account.html" class="nav-link">User Profile</a>
                                     </li>
 
@@ -186,12 +271,12 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown submenu">
+                                    <li class="nav-item dropdown submenu active">
                                         <a class="nav-link dropdown-toggle" href="my-address.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Address Book
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item">
+                                            <li class="nav-item active">
                                                 <a href="my-address.html" class="nav-link">Address Book</a>
                                             </li>
                                             <li class="nav-item">
@@ -483,6 +568,7 @@
 
         <div class="cart-header-separator"></div>
 
+
         <!-- Dashboard area -->
         <section class="bj_account_dashboard" data-bg-color="#f5f5f5">
             <div class="container">
@@ -501,8 +587,8 @@
                             </div>
                             <div class="sidebar_widget_body p-0">
                                 <ul class="sidebar_widget_menu">
-                                    <li><a href="user.html">Хураангуй</a></li>
-                                    <li><a class="active " href="my-account.html">Хувийн мэдээлэл</a></li>
+                                    <li><a class="active " href="user.html">Хураангуй</a></li>
+                                    <li><a href="my-account.html">Хувийн мэдээлэл</a></li>
                                     <li><a href="my-address.html"> Шинэ номын хүсэлт</a></li>
                                     <li><a href="my-pass.html">Нууц үг шинэчлэх</a></li>
                                     <li><a href="my-rating-reviews.html">Уншсан номын түүх</a></li>
@@ -517,99 +603,59 @@
                     <div class="col-lg-9">
                         <div class="account_dashboard_body">
                             <div class="account_dashboard_content">
-                                <div class="account_dashboard_content_header">
-                                    Хувийн мэдээлэл
+                                <div class="account_dashboard_content_header d-flex justify-content-between align-items-center">
+                                    <div>
+                                        Хураангуй
+                                    </div>
+
+                                    <!-- <a href="add-new-address.html" class="bj_theme_btn">Хүсэлт нэмэх</a> -->
+
                                 </div>
                                 <div class="content_body">
-                                    <form action="#">
-                                        <div class="row gy-4">
-                                            <div class="col-12">
-                                                <div class="profile-picture-form">
-                                                    <!-- <div class="preview"><img class="img-fluid" src="assets/img/profile-img.png" alt=""></div> -->
-                                                   <!--  <div class="upload_btn">
-                                                        Upload New Photo
-                                                        <input type="file" id="profile-picture-file">
-                                                    </div> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group ">
-                                                    <input type="text" class="form-control" required>
-                                                    <label class="floating-label">Овог</label>
+                                    <div class="row gy-3 my_address_book_list">
+                                        <div class="col-lg-12">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead class="bg-light">
+                                                        <tr>
+                                                            <th scope="col">Номын нэр</th>
+                                                            <th scope="col">Зохиогч</th>
+                                                            <th scope="col">Огноо</th>
+                                                            <th scope="col">Баркод</th>
+                                                            <th scope="col">Торгуультай эсэх</th>
+                                                           
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                               Бэлэгдэлт амьдрал
+                                                            </td>
+                                                            <td>Юнг К.Г.</td>
+                                                            <td>12/17/2024</td>
 
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group ">
-                                                    <input type="text" class="form-control" required>
-                                                    <label class="floating-label">Нэр</label>
+                                                            <td>0123456789</td>
+                                                            <td><span class="office_label">Тийм</span></td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Ардчилсан үндсэн хууль тогтоогчид
+                                                            </td>
+                                                            <td>Дашням Л</td>
+                                                            <td>12/17/2024</td>
 
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group ">
-                                                    <label class="form-label">Төрсөн огноо</label>
-                                                    <input type="date" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label class="form-label">Хүйс</label>
-                                                    <div class="d-flex flex-row">
-                                                        <div class="form-check me-3">
-                                                            <input class="form-check-input" type="radio" value="" id="genderMale" name="gender_radio">
-                                                            <label class="form-check-label" for="genderMale" style="font-size: 14px">
-                                                                Эрэгтэй
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" value="" id="genderFemale" name="gender_radio">
-                                                            <label class="form-check-label" for="genderFemale" style="font-size: 14px">
-                                                                Эмэгтэй
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                            <td>0123456789</td>
+                                                            <td><span class="home_label">Үгүй</span></td>
+                                                            
+                                                        </tr>
+                                                   
+                                                    </tbody>
+                                                </table>
                                             </div>
 
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" type="text" id="email_address" required>
-                                                    <label class="floating-label" for="email_address">Цахим шуудан</label>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" type="text" id="phone" required>
-                                                    <label class="floating-label" for="phone">Утасны дугаар</label>
-
-                                                </div>
-                                            </div>
                                         </div>
-
-
-                                     <!--    <div class="account_dashboard_content_title mt-3">
-                                            <h4>Password </h4>
-                                        </div>
-                                        <div class="row mt-1 gy-3">
-                                            <div class="col-lg-6">
-                                                <div class="form-group pass-field-with-icon">
-                                                    <input type="password" id="toggle_passowrd_field" class="form-control" required>
-                                                    <label class="floating-label">New Password</label>
-                                                    <i data-toggleTarget="#toggle_passowrd_field" class="icon fas fa-eye toggle-password"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group pass-field-with-icon">
-                                                    <input type="password" id="toggle_passowrd_field2" class="form-control" required>
-                                                    <label class="floating-label">Confirm Password</label>
-                                                    <i data-toggleTarget="#toggle_passowrd_field2" class="icon fas fa-eye toggle-password"></i>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                        <button class="bj_theme_btn mt-3">Хадгалах</button>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -619,6 +665,7 @@
             </div>
         </section>
         <!-- Dashboard area -->
+
 
         <!-- footer area -->
         <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#212833">
@@ -711,6 +758,7 @@
     <script src="assets/js/preloader.js"></script>
     <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="assets/vendors/wow/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
 

@@ -335,7 +335,7 @@ button.bj_theme_btn {
 }
 
 .bj_theme_btn {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-family: var(--bj-Open);
   padding: 15px 36px 14px;
@@ -8564,7 +8564,7 @@ input::-webkit-inner-spin-button {
 .account_dashboard_sidebar .sidebar_widget_menu a {
   border-bottom: 1px dotted #cdcdcd;
   display: block;
-  font-size: 110%;
+  font-size: 14px;
   padding: 15px 20px;
   color: #333;
   transition: all 0.3s ease-in-out;
@@ -8653,7 +8653,7 @@ input::-webkit-inner-spin-button {
   background-color: #f9f9f9;
   padding: 14px 20px;
   color: #17161a;
-  font-size: 20px;
+  font-size: 16px;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   font-weight: 500;
@@ -8688,7 +8688,7 @@ input::-webkit-inner-spin-button {
   margin-top: 20px;
 }
 .account_dashboard_content .form-label {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 26px;
   color: #202124;

@@ -5,17 +5,17 @@
   width: 100%;
   z-index: 90;
 
-  &.header_relative {
-    & + section {
-      margin-top: 100px;
-    }
-  }
+  // &.header_relative {
+  //   & + section {
+  //     // margin-top: 100px;
+  //   }
+  // }
 
-  .navbar-brand {
-    img {
-      max-width: 120px;
-    }
-  }
+  // .navbar-brand {
+  //   img {
+  //     max-width: 120px;
+  //   }
+  // }
 }
 
 .menu_one {
@@ -35,6 +35,8 @@
   img {
     & + img {
       display: none;
+      height: 40px;
+      width: 20px;
     }
   }
 }

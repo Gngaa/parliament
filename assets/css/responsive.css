@@ -437,9 +437,9 @@
     margin-bottom: 20px;
     display: inline-block;
   }
-  .header_area.header_relative + section {
+  /* .header_area.header_relative + section {
     margin-top: 64px;
-  }
+  } */
   .features_box {
     margin-top: 50px;
   }

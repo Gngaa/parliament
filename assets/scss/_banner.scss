@@ -287,7 +287,9 @@
   }
 }
 .search_form {
-  max-width: 520px;
+  // max-width: 520px;
+  display: flex;
+  flex-direction: row;
   position: relative;
   margin-top: 50px;
   .form-control {

@@ -122,10 +122,10 @@ Table of Content:
   border-top-color: #4285F4;
   margin: 0 auto 0em auto;
   position: absolute;
-  left: -40px;
-  right: -40px;
-  bottom: -40px;
-  top: -40px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  top: -20px;
 }
 #preloader .spinner:before {
   content: "";
@@ -135,14 +135,17 @@ Table of Content:
   box-shadow: 0 0 20px 0 rgba(4, 46, 56, 0.2);
   background: #4285F4;
   position: absolute;
-  right: 31px;
-  top: 41px;
+  right: 11px;
+  top: 1px;
   border-radius: 50%;
 }
 @media (max-width: 576px) {
   #preloader .spinner:before {
     top: 18px;
   }
+}
+#preloader img{
+  height: 40px;
 }
 #preloader .round_spinner {
   border-width: 1px;
@@ -151,8 +154,8 @@ Table of Content:
   border-radius: 50%;
   background-color: rgb(253, 253, 253);
   box-shadow: 0 0 100px 0 rgba(4, 46, 56, 0.14);
-  width: 248px;
-  height: 248px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,8 +164,8 @@ Table of Content:
 }
 @media (max-width: 576px) {
   #preloader .round_spinner {
-    width: 155px;
-    height: 155px;
+    width: 50px;
+    height: 50px;
   }
 }
 #preloader .round_spinner h4 {
@@ -189,6 +192,7 @@ Table of Content:
 }
 
 #preloader p {
+  display:none !important;
   color: #636466;
   display: block;
   font-size: 14px;
@@ -1171,6 +1175,14 @@ ul.ordered-list li::before {
 /*============ error_area css ========*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 75px; /* Better browser support than padding-inline */
+  box-sizing: border-box; /* Prevents padding from increasing total width */
+}
 .header_area {
   position: absolute;
   top: 0;
@@ -2304,10 +2316,38 @@ ul.ordered-list li::before {
 }
 
 .search_form {
-  max-width: 520px;
+  /* max-width: 520px; */
+  display: flex;
+  flex-direction: row;
   position: relative;
   margin-top: 50px;
 }
+.search_form.search-selection{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search_form.search-selection .nice-select {
+  float: inherit;
+}
+.search_form .search-selection .selectpickers {
+  border-color: #d2d2d3;
+  border-radius: 3px;
+  color: #4D4E50;
+  margin-left: 15px;
+}
+.search_form.search-selection .selectpickers:after {
+  border-bottom: 1px solid #4d4e50;
+  border-right: 1px solid #4d4e50;
+  width: 8px;
+  height: 8px;
+  margin-top: -5px;
+}
+.search_form .selectpickers .list {
+    right: 0;
+    left: inherit;
+  }
 .search_form .form-control {
   font-size: 14px;
   font-weight: 400;

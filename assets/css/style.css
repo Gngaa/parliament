@@ -1239,8 +1239,8 @@ ul.ordered-list li::before {
 
 .menu > .nav-item {
   position: relative;
-  /* padding-bottom: 39px; */
-  /* padding-top: 39px; */
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .menu > .nav-item > .nav-link {
   font: 400 14px "Open Sans", sans-serif;
@@ -1287,7 +1287,7 @@ ul.ordered-list li::before {
 }
 @media (min-width: 992px) {
   .menu > .nav-item.submenu .dropdown-menu {
-    transform: translateY(40px);
+    transform: translateY(20px);
     transition: all 0.3s ease-in;
     opacity: 0;
     pointer-events: none;
@@ -1343,7 +1343,7 @@ ul.ordered-list li::before {
     opacity: 0;
     display: block;
     pointer-events: none;
-    transform: translateY(40px);
+    transform: translateY(20px);
     transition: all 0.3s ease-in;
     border: 0px;
     margin: 0px;
@@ -1379,7 +1379,7 @@ ul.ordered-list li::before {
 @media (min-width: 992px) {
   .menu > .nav-item:hover .dropdown-menu {
     opacity: 1;
-    transform: translateY(20px);
+    transform: translateY(0);
     pointer-events: all;
   }
 }

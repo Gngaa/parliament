@@ -508,11 +508,11 @@
                         </form> -->
                         <div class="text-center">
                             <form action="#" class="search_form wow fadeInUp search-selection" data-wow-delay="0.4s">
-                                <select name="orderby" class="orderby selectpickers">
+                                <select name="orderby" class="form-control orderby selectpickers ">
                                     <option value="catalog" selected='selected'>Library Catalog</option>
                                     <option value="title">Title</option>
                                     <option value="author">Author</option>
-                                    <option value="subject">Subjec</option>
+                                    <option value="subject">Subject</option>
                                     <option value="isbn">ISBN</option>
                                     <option value="issn">ISSN</option>
                                     <option value="series">Series</option>
@@ -1481,63 +1481,54 @@
         <!-- bj subscribe area -->
 
         <!-- footer area css  -->
-        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1b1f3c">
-            <div class="container">
+        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1B1F3B">
+            <div class="footer-container">
                 <div class="footer_top">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="f_widget link_widget pe-4">
-                                <a href="#" class="f_logo">
-                                    <img src="assets/img/home/logo.png" alt="f_logo">
+                        <div class="col-lg-3 col-sm-6 justify-content-center d-flex align-items-center">
+                            <div class=" text-center ">
+                                <a href=" #" class="footer_logo">
+                                    <img src="assets/img/home/soyombo_white.svg" alt="f_logo">
                                 </a>
-                                <div class="footer_subscribes">
-                                    <h2 class="f_widget_title">Subscribe Now</h2>
-                                    <form action="#">
-                                        <div class="footer_subscribe_form">
-                                            <input type="text" placeholder="Enter your Email" class="form-control">
-                                            <button type="submit" class="bj_theme_btn">Subscribe</button>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Company</h2>
+                                <h2 class="f_widget_title">Бидний тухай</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                    <li><a href="author.html">Author</a></li>
+                                    <li><a href="about.html">Мэндчилгээ</a></li>
+                                    <li><a href="contact.html">Түүхэн товчоо</a></li>
+                                    <li><a href="blog-grid.html">Бүтэц зохион байгуулалт</a></li>
+                                    <li><a href="author.html">Хамтын ажиллагаа</a></li>
                                     <li><a href="book-listing.html">Books</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Services</h2>
+                                <h2 class="f_widget_title">Судалгаа</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="my-orders.html">Order</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="my-wishlist.html">Wishlist</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Pages</h2>
-                                <ul class="list-unstyled list">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="registration.html">Register</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="my-ebook-library.html">Ebook Library</a></li>
+                                    <li><a href="shop.html">Судалгааны тайлан</a></li>
+                                    <li><a href="my-orders.html">Судалгааны эмхэтгэл</a></li>
+                                    <li><a href="cart.html">Мэдээллийн хуудас</a></li>
+                                    <li><a href="checkout.html">Эрдэм шинжилгээний сэтгүүл</a></li>
+                                    <!-- <li><a href="my-wishlist.html">Wishlist</a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Сургалт</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="login.html">Цахим сургалт</a></li>
+                                    <li><a href="registration.html">Парламентын боловсрол</a></li>
+                                    <!-- <li><a href="typography.html">Typography</a></li> -->
+                                    <!-- <li><a href="404.html">404 Page</a></li> -->
+                                    <!-- <li><a href="my-ebook-library.html">Ebook Library</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-3 col-sm-6">
                             <div class="f_widget link_widget">
                                 <h2 class="f_widget_title">Contacs Us</h2>
                                 <ul class="list-unstyled list">
@@ -1553,11 +1544,12 @@
                                     <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
+
                     </div>
-                </div>
-                <div class="footer_bottom d-flex  justify-content-center">
-                    <p>© 2024 Bookjar. All Rights Reserved</p>
+                    <div class="footer_bottom d-flex  justify-content-center">
+                        <p>© 2025 Парламентын номын сан Бүх эрх хуулиар хамгаалагдсан.</p>
+                    </div>
                 </div>
             </div>
         </footer>

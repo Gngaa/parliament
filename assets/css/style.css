@@ -118,8 +118,8 @@ Table of Content:
   animation: spinner 3s infinite linear;
   border-radius: 50%;
   border: 3px solid #f1f6f8;
-  border-left-color: #4285F4;
-  border-top-color: #4285F4;
+  border-left-color: #1E398D;
+  border-top-color: #1E398D;
   margin: 0 auto 0em auto;
   position: absolute;
   left: -20px;
@@ -133,7 +133,7 @@ Table of Content:
   height: 20px;
   border: 6px solid #fff;
   box-shadow: 0 0 20px 0 rgba(4, 46, 56, 0.2);
-  background: #4285F4;
+  background: #1E398D;
   position: absolute;
   right: 11px;
   top: 1px;
@@ -886,7 +886,7 @@ ul.ordered-list li::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .search-banner {
-  background: url('/assets/img/home/header.svg') repeat-x;
+  background: url('../img/home/header.svg') repeat-x;
   background-size: fill;
   background-position:bottom;
   position: absolute;
@@ -962,7 +962,13 @@ ul.ordered-list li::before {
   outline: none;
   transition: all 0.3s;
 }
-
+.login-modal .input-field{
+  /* flex: 1; */
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
 .input-field:focus {
   border-color: #1890ff;
   box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
@@ -1239,11 +1245,11 @@ ul.ordered-list li::before {
 
 .menu > .nav-item {
   position: relative;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .menu > .nav-item > .nav-link {
-  font: 400 14px "Open Sans", sans-serif;
+  font: 400 12px "Open Sans", sans-serif;
   color: #202124;
   padding: 0px;
   letter-spacing: 0.8px;
@@ -1268,7 +1274,7 @@ ul.ordered-list li::before {
   border-radius: 4px;
   left: -30px;
   min-width: 200px;
-  padding: 20px 0;
+  padding: 5px 0;
   background: #fff;
   border: 1px solid #ebebeb;
 }
@@ -2330,7 +2336,7 @@ ul.ordered-list li::before {
 
 .search_form.search-selection .nice-select {
   float: inherit;
-  width:180px;
+  width:150px;
 }
 .search_form .search-selection .selectpickers {
   border-color: #d2d2d3;
@@ -7929,12 +7935,22 @@ input::-webkit-inner-spin-button {
   position: relative;
   z-index: 2;
 }
+.login-modal.login-wrapper{
+min-height: auto;
+}
+
 .login-wrapper .login-left {
-  width: 50%;
+  width: 100%;
   padding: 60px 43px;
   border-right: 1px solid #bbc0c4;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 30px 60px rgba(19, 45, 73, 0.5);
+}
+.login-modal .login-left{
+  padding: 20px 20px;
+}
+.login-modal .btn-close{
+  z-index: 9999 !important;
 }
 .login-wrapper .login-left .title {
   font-size: 40px;

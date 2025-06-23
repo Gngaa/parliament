@@ -45,7 +45,44 @@
             <p></p>
         </div>
     </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal"
+                    style="z-index: 9999;" aria-label="Close"></button>
 
+                <div class="modal-body p-0">
+                    <div class="login-modal login-wrapper">
+                        <div class="login-left">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href=" index.html" style="margin-bottom: 10px;">
+                                    <img src="assets/img/home/logob.png" style="color: #1E398D;" alt="Image">
+                                </a>
+                            </div>
+
+                            <form action="#">
+                                <div class="input-field">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="input-field pass-field-with-icon">
+                                    <input type="password" class="form-control" id="toggle_passowrd_field"
+                                        placeholder="Password">
+                                    <i data-toggleTarget="#toggle_passowrd_field"
+                                        class="icon fas fa-eye toggle-password"></i>
+                                </div>
+
+                                <div class="input-field">
+                                    <button type="submit" class="bj_theme_btn w-100 border-0">Нэвтрэх</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="body_wrapper">
         <div class="click_capture"></div>
         <header class="header_area header_relative header_blue">
@@ -78,12 +115,11 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                         <ul class="navbar-nav menu w_menu ms-auto me-auto">
-                            <li class="nav-item dropdown submenu active">
-                                <a class="nav-link dropdown-toggle" href="index.html" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    HOME
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="shop.html" role="button">
+                                    Ном
                                 </a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li class="nav-item active">
                                         <a href="index.html" class="nav-link">Home One</a>
                                     </li>
@@ -96,23 +132,23 @@
                                     <li class="nav-item">
                                         <a href="index-4.html" class="nav-link">Home Four</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="nav-item dropdown submenu">
                                 <a class="nav-link dropdown-toggle" href="shop.html" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Shop
+                                    Сэтгүүл
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="shop.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Shop
+                                    <li class="nav-item dropdown ">
+                                        <a class="nav-link " href="shop.html" role="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Эрдэм шинжилгээний сэтгүүл
                                         </a>
-                                        <ul class="dropdown-menu">
+                                        <!-- <ul class="dropdown-menu">
                                             <li class="nav-item">
-                                                <a href="shop.html" class="nav-link">Shop</a>
+                                                <a href="shop.html" class="nav-link">Эрдэм шинжилгээний сэтгүүл</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
@@ -120,9 +156,9 @@
                                             <li class="nav-item">
                                                 <a href="product-single.html" class="nav-link">Product Details</a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
-                                    <li class="nav-item dropdown submenu">
+                                    <!-- <li class="nav-item dropdown submenu">
                                         <a class="nav-link dropdown-toggle" href="cart.html" role="button"
                                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Cart
@@ -152,21 +188,21 @@
                                                 <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li class="nav-item dropdown submenu">
                                 <a class="nav-link dropdown-toggle" href="my-account.html" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
+                                    Төрийн мэдээлэл
                                 </a>
 
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="my-account.html" class="nav-link">User Profile</a>
+                                        <a href="my-account.html" class="nav-link">Тусгай дугаар</a>
                                     </li>
 
-                                    <li class="nav-item dropdown submenu">
+                                    <!-- <li class="nav-item dropdown submenu">
                                         <a class="nav-link dropdown-toggle" href="my-orders.html" role="button"
                                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Orders
@@ -228,14 +264,22 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="my-wishlist.html" class="nav-link">Wishlist</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown submenu mega_menu tab-demo">
+                            <li class="nav-item  dropdown submenu ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Explore
+                                    aria-haspopup="true" aria-expanded="false">Судалгаа
                                 </a>
-                                <ul class="dropdown-menu sub">
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Судалгааны эмхэтгэл</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Чуулганы танилцуулга</a>
+                                    </li>
+                                </ul>
+                                <!-- <ul class="dropdown-menu sub">
                                     <li>
                                         <div class="row">
                                             <div class="col-lg-5 tabHeader">
@@ -434,14 +478,14 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
-                            <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="blog-list.html" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Blog
+                            <!-- <li class="nav-item  ">
+                                <a class="nav-link " href="blog-list.html" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Чуулганы танилцуулга
                                 </a>
-
+                                
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="blog-grid.html" class="nav-link">Blog Grid</a>
@@ -456,14 +500,23 @@
                                         <a href="blog-details.html" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
+                            </li> -->
+                            <li class="nav-item  ">
+                                <a class="nav-link " href="blog-list.html" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Сонин
+                                </a>
                             </li>
                         </ul>
 
                         <div class="alter_nav">
 
                         </div>
-                        <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i
-                                class="fa-regular fa-user"></i>Нэвтрэх</a>
+
+                        <button type="button" class="bj_theme_btn strock_btn hidden-sm hidden-xs" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <i class=" fa-regular fa-user"></i> Нэвтрэх
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -509,14 +562,11 @@
                         <div class="text-center">
                             <form action="#" class="search_form wow fadeInUp search-selection" data-wow-delay="0.4s">
                                 <select name="orderby" class="form-control orderby selectpickers ">
-                                    <option value="catalog" selected='selected'>Library Catalog</option>
-                                    <option value="title">Title</option>
-                                    <option value="author">Author</option>
-                                    <option value="subject">Subject</option>
+                                    <option value="catalog" selected='selected'>Каталог</option>
+                                    <option value="title">Номын нэр</option>
+                                    <option value="author">Зохиогч</option>
                                     <option value="isbn">ISBN</option>
                                     <option value="issn">ISSN</option>
-                                    <option value="series">Series</option>
-                                    <option value="call_number">Call Number</option>
                                 </select>
                                 <input type="text" placeholder="Хайх үгээ оруулна уу..." class="form-control">
                                 <button type="submit" class="search_btn"><i class="ti-search"></i></button>
@@ -1485,14 +1535,14 @@
             <div class="footer-container">
                 <div class="footer_top">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6 justify-content-center d-flex align-items-center">
+                        <div class="col-md-2 col-sm-6 justify-content-center d-flex align-items-center">
                             <div class=" text-center ">
                                 <a href=" #" class="footer_logo">
                                     <img src="assets/img/home/soyombo_white.svg" alt="f_logo">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
                                 <h2 class="f_widget_title">Бидний тухай</h2>
                                 <ul class="list-unstyled list">
@@ -1504,7 +1554,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
                                 <h2 class="f_widget_title">Судалгаа</h2>
                                 <ul class="list-unstyled list">
@@ -1516,7 +1566,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
                                 <h2 class="f_widget_title">Сургалт</h2>
                                 <ul class="list-unstyled list">
@@ -1528,23 +1578,30 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Contacs Us</h2>
+                                <h2 class="f_widget_title">Холбоо барих</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="tel:610383766284"><i class="fa-solid fa-phone-volume"></i>+61 (0) 3
-                                            8376 6284</a></li>
-                                    <li><a href="mailto:noreply@bookjar.com"><i
-                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li>
+                                    <li><a href="tel:51262988"><i class="fa-solid fa-phone-volume"></i>+51-262988</a>
+                                    </li>
+                                    <li>
+                                        <p style="color:#bebebe;">
+                                            Монгол Улсын Их Хурлын Тамгын газар. Монгол Улс 14201 Улаанбаатар хот,
+                                            Сүхбаатар
+                                            дүүрэг, Жанжин Д.Сүхбаатарын талбай 1, Төрийн ордон.
+                                        </p>
+                                    </li>
+                                    <!-- <li><a href="mailto:noreply@bookjar.com"><i
+                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
                                 </ul>
                                 <ul class="list-unstyled f_social_round">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+
                                 </ul>
                             </div>
-                        </div> -->
+                        </div>
 
                     </div>
                     <div class="footer_bottom d-flex  justify-content-center">

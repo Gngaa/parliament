@@ -3104,7 +3104,7 @@ ul.ordered-list li::before {
   padding: 20px;
 }
 .best_slider .bj_new_pr_item .bj_new_pr_content_two .bj_new_pr_title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   transition: color 0.3s linear;
 }
@@ -3337,7 +3337,7 @@ ul.ordered-list li::before {
   color: var(--bj-blue);
 }
 .bj_best_book_item .bj_pr_meta {
-  font-size: 16px;
+  font-size: 13px;
   color: #797a7c;
   border-bottom: 1px solid #d2d2d3;
   padding-bottom: 20px;
@@ -3776,7 +3776,7 @@ ul.ordered-list li::before {
 }
 
 .bj_best_book_area_two .bj_best_book_item .bj_new_pr_title {
-  font-size: 22px;
+  font-size: 14px;
 }
 .bj_best_book_area_two .bj_best_book_item .bj_pr_meta {
   border: 0px;
@@ -7044,7 +7044,7 @@ input::-webkit-inner-spin-button {
   flex: 1;
 }
 .bj_book_details h2 {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 .bj_book_details .book_meta {

@@ -2403,10 +2403,15 @@ ul.ordered-list li::before {
   color: #fff;
 }
 .advanced_search_form.search_form .search_btn{
-  right: 12%;
+  right: 15%;
 }
 .advanced_search_form.search_form .bj_theme_btn{
- padding:8px;
+ padding:20px 8px ;
+ white-space: nowrap;
+ overflow: unset;
+}
+.advanced_search_form.search_form button.bj_theme_btn{
+  border-radius: 4px;
 }
 .clients_logo_inner {
   display: flex;

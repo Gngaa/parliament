@@ -3480,7 +3480,16 @@ ul.ordered-list li::before {
 .best_pr_tab_inner .bj_theme_btn_two.style_two:hover i {
   transform: translateX(5px);
 }
-
+.bj_theme_btn_two.strock_btn{
+  color: var(--bj-darks);
+}
+.bj_theme_btn_two.strock_btn:hover{
+  color: var(--bj-blue);
+}
+.bj_theme_btn_two.strock_btn:hover:before {
+  transform: translateX(-50%) scale(20);
+  opacity: 0;
+}
 .best_pr_tab_two .nav-item {
   margin-right: 50px;
 }
@@ -10128,9 +10137,9 @@ min-height: auto;
 .bj_footer_area_four .footer_subscribe_form .bj_theme_btn {
   background: #4285F4;
 }
-.bj_footer_area_four .f_widget.link_widget ul li a {
+/* .bj_footer_area_four .f_widget.link_widget ul li a {
   color: #bebebe;
-}
+} */
 .bj_footer_area_four .f_widget.link_widget ul li a:hover {
   color: #4285F4;
 }

@@ -344,7 +344,7 @@ button.bj_theme_btn {
   font-family: var(--bj-Open);
   padding: 15px 36px 14px;
   border-radius: 4px;
-  background: var(--bj-blue);
+  /* background: var(--bj-blue); */
   display: inline-block;
   color: #fff;
   position: relative;
@@ -380,6 +380,8 @@ button.bj_theme_btn {
 .bj_theme_btn.strock_btn {
   border: 1px solid #d1d1d1;
   color: #4d4e50;
+  border-color: #4285F4;
+  color: #4285F4;
   background: transparent;
 }
 .bj_theme_btn.strock_btn:before {
@@ -1245,8 +1247,8 @@ ul.ordered-list li::before {
 
 .menu > .nav-item {
   position: relative;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 .menu > .nav-item > .nav-link {
   font: 400 12px "Open Sans", sans-serif;
@@ -1293,7 +1295,7 @@ ul.ordered-list li::before {
 }
 @media (min-width: 992px) {
   .menu > .nav-item.submenu .dropdown-menu {
-    transform: translateY(20px);
+    transform: translateY(40px);
     transition: all 0.3s ease-in;
     opacity: 0;
     pointer-events: none;
@@ -2820,7 +2822,8 @@ ul.ordered-list li::before {
 .bj_new_pr_item .bj_theme_btn {
   width: 100%;
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  color: var(--bj-blue);
   padding: 8px 30px;
   display: block;
   margin-top: 18px;
@@ -3118,10 +3121,10 @@ ul.ordered-list li::before {
   font-size: 14px;
   margin-top: 5px;
 }
-.best_slider .bj_new_pr_item .bj_new_pr_content_two .bj_theme_btn {
+/* .best_slider .bj_new_pr_item .bj_new_pr_content_two .bj_theme_btn {
   padding: 10px 20px;
   text-transform: uppercase;
-}
+} */
 .best_slider .slick-arrow {
   width: 35px;
   height: 35px;

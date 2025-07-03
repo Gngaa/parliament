@@ -25,7 +25,7 @@
 </head>
 <style type="text/css">
     .header_blue {
-        background-color: #1f398e;
+        background-color: #1E398D;
     }
 
     .title {
@@ -47,18 +47,55 @@
             <p></p>
         </div>
     </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal"
+                    style="z-index: 9999;" aria-label="Close"></button>
 
+                <div class="modal-body p-0">
+                    <div class="login-modal login-wrapper">
+                        <div class="login-left">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href=" index.html" style="margin-bottom: 10px;">
+                                    <img src="assets/img/home/logob.png" style="color: #1E398D;" alt="Image">
+                                </a>
+                            </div>
+
+                            <form action="#">
+                                <div class="input-field">
+                                    <input type="email" class="form-control" placeholder="Нэр">
+                                </div>
+                                <div class="input-field pass-field-with-icon">
+                                    <input type="password" class="form-control" id="toggle_passowrd_field"
+                                        placeholder="Нууц үг">
+                                    <i data-toggleTarget="#toggle_passowrd_field"
+                                        class="icon fas fa-eye toggle-password"></i>
+                                </div>
+
+                                <div class="input-field">
+                                    <button type="submit" class="bj_theme_btn w-100 border-0">Нэвтрэх</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="body_wrapper">
         <div class="click_capture"></div>
         <header class="header_area header_relative header_blue">
             <nav class="navbar navbar-expand-lg menu_one menu_white" id="header">
-                <div class="container">
+                <div class="header-container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img src="assets/img/home/logo.png" alt="logo" />
+                        <img src="assets/img/home/logo.png" alt="logo" style />
                         <img src="assets/img/home/logob.png" alt="logo" />
                         <div class="logo_text">
-                            <!-- <span>ПАРЛАМЕНТЫН СУДАЛГАА,</span>
-                            <span>ХӨГЖЛИЙН ХҮРЭЭЛЭН</span> -->
+                            <!-- <span>ПАРЛАМЕНТЫН СУДАЛГАА,</span> -->
+                            <!-- <span>ХӨГЖЛИЙН ХҮРЭЭЛЭН</span> -->
                             <span>ПАРЛАМЕНТЫН</span>
                             <span>НОМЫН САН</span>
                         </div>
@@ -80,164 +117,16 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                         <ul class="navbar-nav menu w_menu ms-auto me-auto">
-                            <li class="nav-item dropdown submenu active">
-                                <a class="nav-link dropdown-toggle" href="index.html" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    HOME
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item active">
-                                        <a href="index.html" class="nav-link">Home One</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-2.html" class="nav-link">Home Two</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-3.html" class="nav-link">Home Three</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-4.html" class="nav-link">Home Four</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="shop.html" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Shop
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="shop.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Shop
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="shop.html" class="nav-link">Shop</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="product-single.html" class="nav-link">Product Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Cart
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="cart.html" class="nav-link">Cart</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="cart-guest.html" class="nav-link">Cart Guest</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Checkout
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="checkout.html" class="nav-link">Checkout</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="my-account.html" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="my-account.html" class="nav-link">User Profile</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="my-orders.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Orders
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="my-orders.html" class="nav-link">Orders</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="order-track.html" class="nav-link">Order Tracking</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="order-confrmation.html" class="nav-link">Thank You Page</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="my-ebook-library.html" class="nav-link">Ebook Library</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="my-list.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Book List
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="my-list.html" class="nav-link">Book List</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="my-list-details.html" class="nav-link">Book List Details</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="my-list-create.html" class="nav-link">Create Book List</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="my-address.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Address Book
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="my-address.html" class="nav-link">Address Book</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="add-new-address.html" class="nav-link">Add New Address</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="my-following-authors.html" class="nav-link">Following Authors</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="my-rating-reviews.html" class="nav-link">Rating & Reviews</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="my-wishlist.html" class="nav-link">Wishlist</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown submenu mega_menu tab-demo">
+                            <li class="nav-item  dropdown submenu ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Explore
+                                    aria-haspopup="true" aria-expanded="false">Ном
                                 </a>
-                                <ul class="dropdown-menu sub">
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Чуулганы танилцуулга</a>
+                                    </li>
+                                </ul>
+                                <!-- <ul class="dropdown-menu sub">
                                     <li>
                                         <div class="row">
                                             <div class="col-lg-5 tabHeader">
@@ -436,14 +325,278 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="blog-list.html" role="button"
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Blog
+                                    Сэтгүүл
                                 </a>
 
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item dropdown ">
+                                        <a class="nav-link " href="shop.html" role="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Эрдэм шинжилгээний сэтгүүл
+                                        </a>
+                                        <!-- <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop.html" class="nav-link">Эрдэм шинжилгээний сэтгүүл</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="product-single.html" class="nav-link">Product Details</a>
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Төрийн мэдээлэл
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="cart-guest.html" class="nav-link">Тусгай дугаар</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--     <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Checkout
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">Checkout</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item  dropdown submenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Судалгаа
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Судалгааны эмхэтгэл</a>
+                                    </li>
+                                </ul>
+                                <!-- <ul class="dropdown-menu sub">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-5 tabHeader">
+                                                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                    aria-orientation="vertical">
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill"
+                                                            href="#v-pills-tour" role="tab" aria-controls="v-pills-tour"
+                                                            aria-selected="false">Utility Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-others-menu-tab" data-toggle="pill"
+                                                            href="#v-others-menu" role="tab"
+                                                            aria-controls="v-others-menu"
+                                                            aria-selected="false">Company</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill"
+                                                            href="#v-pills-doc" role="tab" aria-controls="v-pills-doc"
+                                                            aria-selected="true">Shop Pages</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-code-tab" data-toggle="pill"
+                                                            href="#v-pills-code" role="tab" aria-controls="v-pills-code"
+                                                            aria-selected="false">Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill"
+                                                            href="#v-pills-layout" role="tab"
+                                                            aria-controls="v-pills-layout" aria-selected="false">Blog &
+                                                            Author</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade active show" id="v-pills-tour"
+                                                        role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="login.html">Sign In</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="registration.html">Sign Up</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="typography.html">Typography</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-2.html">Banner style
+                                                                        02</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="page-banner-style-3.html">Banner style
+                                                                        03</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-others-menu" role="tabpanel"
+                                                        aria-labelledby="v-others-menu-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list w_100">
+                                                                <li>
+                                                                    <a href="book-listing.html">Book Listing</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about.html">About</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="contact.html">Contact Us</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="terms-condition.html">Terms & Services</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-doc" role="tabpanel"
+                                                        aria-labelledby="v-pills-doc-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="shop.html">Shop</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop-no-sidebar.html">Shop No Sidebar</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="product-single.html">Product Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart.html">Cart</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="cart-guest.html">Cart Guest</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="checkout.html">Checkout</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-gift.html">Checkout Gift</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="checkout-login.html">Checkout Login</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="my-wishlist.html">Wishlist</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-code" role="tabpanel"
+                                                        aria-labelledby="v-pills-code-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-account.html">User Profile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-orders.html">Orders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-track.html">Order Tracking</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="order-confrmation.html">Thank You Page</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-ebook-library.html">Ebook Library</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-following-authors.html">Following
+                                                                        Authors</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-rating-reviews.html">Rating &
+                                                                        Authors</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="my-list.html">Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-details.html">Book List Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-list-create.html">Create Book List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="my-address.html">Address Book</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="add-new-address.html">Add New Address</a>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-layout" role="tabpanel"
+                                                        aria-labelledby="v-pills-layout-tab">
+                                                        <div class="d-flex">
+                                                            <ul class="list-unstyled tab_list">
+                                                                <li>
+                                                                    <a href="blog-grid.html">Blog Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-extend-grid.html">Extended Grid</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-list.html">Blog List</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="blog-details.html">Blog Details</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author.html">Author</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="author-single.html">Author Single</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <!-- <li class="nav-item  ">
+                                <a class="nav-link " href="blog-list.html" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Чуулганы танилцуулга
+                                </a>
+                                
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="blog-grid.html" class="nav-link">Blog Grid</a>
@@ -458,14 +611,31 @@
                                         <a href="blog-details.html" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
+                            </li> -->
+                            <li class="nav-item  dropdown submenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Сонин
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Монголын үнэн</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Зууны мэдээ</a>
+                                    </li>
+                                </ul>
+
                             </li>
                         </ul>
 
                         <div class="alter_nav">
 
                         </div>
-                        <a class="bj_theme_btn strock_btn hidden-sm hidden-xs" href="login.html"><i
-                                class="fa-regular fa-user"></i>Нэвтрэх</a>
+
+                        <button type="button" class="bj_theme_btn strock_btn hidden-sm hidden-xs" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <i class=" fa-regular fa-user"></i> Нэвтрэх
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -663,8 +833,7 @@
                                                         <div class="modal-content modal-item">
                                                             <div class="modal-header border-0 p-0">
                                                                 <h4 class="modal-title mb-50" id="exampleModalLabel">
-                                                                    Hello
-                                                                    Jason</h4>
+                                                                    Хэрэглэгч</h4>
                                                                 <button type="button" class="close-btn"
                                                                     data-bs-dismiss="modal" aria-label="Close"><i
                                                                         class="icon_close"></i></button>
@@ -674,8 +843,8 @@
                                                                     <!-- <img src="assets/img/profile-img.png" alt="Admin"> -->
                                                                 </div>
                                                                 <div>
-                                                                    <p class="admin-title">Corey Baptista</p>
-                                                                    <p class="admin-sub-title">Posting publicly
+                                                                    <!-- <p class="admin-title">Corey Baptista</p> -->
+                                                                    <p class="admin-sub-title">Үүргийн эрх зүйн ерөнхий анги
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -692,7 +861,7 @@
                                                                     class="dynamic-star-rating-input" value="0">
                                                                 <textarea
                                                                     class="admin-text form-control dynamic-rating-text"
-                                                                    placeholder="Share details of your own experience at this place"
+                                                                    placeholder="Номын талаарх сэтгэгдэл"
                                                                     cols="30" rows="5"></textarea>
                                                             </div>
                                                             <!--  <div class="admin-galley">
@@ -723,8 +892,7 @@
                                                         <i class="fas fa-star"></i>
 
                                                     </div> -->
-                                                    <p class="review">Иргэний эрх зүйн салбарын нэхэмжлэлийн гол
-                                                        үндэслэлүүд</p>
+                                                    <p class="review">Иргэний эрх зүйн салбарын нэхэмжлэлийн гол үндэслэлүүд болох шаардах эрхүүд нь тусгай анги болоод өмчийн эрх зүйд тусгагдсан байдаг</p>
                                                     <button type="button" class="bj_theme_btn strock_btn btn_small_two"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#editReviewModal">Сэтгэгдлээ засварлах </button>
@@ -737,8 +905,7 @@
                                                                 <div class="modal-header border-0 p-0">
                                                                     <h4 class="modal-title mb-50"
                                                                         id="editReviewModalLabel">
-                                                                        Hello
-                                                                        Jason</h4>
+                                                                        Хэрэглэгч</h4>
                                                                     <button type="button" class="close-btn"
                                                                         data-bs-dismiss="modal" aria-label="Close"><i
                                                                             class="icon_close"></i></button>
@@ -748,8 +915,8 @@
                                                                         <!-- <img src="assets/img/profile-img.png" alt="Admin"> -->
                                                                     </div>
                                                                     <div>
-                                                                        <p class="admin-title">Corey Baptista</p>
-                                                                        <p class="admin-sub-title">Posting publicly
+                                                                        <!-- <p class="admin-title">Corey Baptista</p> -->
+                                                                        <p class="admin-sub-title">Үүргийн эрх зүйн ерөнхий анги
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -768,7 +935,7 @@
                                                                         class="admin-text form-control dynamic-rating-text"
                                                                         placeholder="Share details of your own experience at this place"
                                                                         cols="30"
-                                                                        rows="5">Good book, I understood many important theories from the book.</textarea>
+                                                                        rows="5">Иргэний эрх зүйн салбарын нэхэмжлэлийн гол үндэслэлүүд болох шаардах эрхүүд нь тусгай анги болоод өмчийн эрх зүйд тусгагдсан байдаг</textarea>
                                                                 </div>
                                                                 <!--  <div class="admin-galley">
                                                                     <div class="gallery-item">
@@ -887,7 +1054,7 @@
                             </div>
                         </div>
 
-                        <div class="product_details_sidebar">
+                        <!-- <div class="product_details_sidebar">
                             <a class="details_header" data-bs-toggle="collapse" href="#product_details_collapse"
                                 role="button" aria-expanded="false" aria-controls="product_details_collapse">
                                 <h6 class="mb-0">Product Details</h6>
@@ -963,7 +1130,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1084,83 +1251,83 @@
 
 
         <!-- footer area -->
-        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1b1f3c">
-            <div class="container">
+         <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1E398D">
+            <div class="footer-container">
                 <div class="footer_top">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="f_widget link_widget pe-4">
-                                <a href="#" class="f_logo">
-                                    <img src="assets/img/home/logo.png" alt="f_logo">
+                        <div class="col-md-2 col-sm-6 justify-content-center d-flex align-items-center">
+                            <div class=" text-center ">
+                                <a href=" #" class="footer_logo">
+                                    <img src="assets/img/home/soyombo_white.svg" alt="f_logo">
                                 </a>
-                                <div class="footer_subscribes">
-                                    <h2 class="f_widget_title">Subscribe Now</h2>
-                                    <form action="#">
-                                        <div class="footer_subscribe_form">
-                                            <input type="text" placeholder="Enter your Email" class="form-control">
-                                            <button type="submit" class="bj_theme_btn">Subscribe</button>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Company</h2>
+                                <h2 class="f_widget_title">Бидний тухай</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                    <li><a href="author.html">Author</a></li>
-                                    <li><a href="book-listing.html">Books</a></li>
+                                    <li><a href="#">Мэндчилгээ</a></li>
+                                    <li><a href="#">Түүхэн товчоо</a></li>
+                                    <li><a href="#">Бүтэц зохион байгуулалт</a></li>
+                                    <li><a href="#">Хамтын ажиллагаа</a></li>
+        
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Services</h2>
+                                <h2 class="f_widget_title">Судалгаа</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="my-orders.html">Order</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="my-wishlist.html">Wishlist</a></li>
+                                    <li><a href="#">Судалгааны тайлан</a></li>
+                                    <li><a href="#">Судалгааны эмхэтгэл</a></li>
+                                    <li><a href="#">Мэдээллийн хуудас</a></li>
+                                    <li><a href="#">Эрдэм шинжилгээний сэтгүүл</a></li>
+                                    <!-- <li><a href="my-wishlist.html">Wishlist</a></li> -->
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Pages</h2>
+                                <h2 class="f_widget_title">Чухал холбоос</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="registration.html">Register</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="my-ebook-library.html">Ebook Library</a></li>
+                                    <li><a href="#">Монгол улсын Их Хурал</a></li>
+                                    <li><a href="#">Хуулийн сан</a></li>
+                                    <li><a href="#">Хууль зүйн үндэсний хүрээлэн</a></li>
+                                    <li><a href="https://training.parliament.mn/">Сургалтын цахим систем</a></li>
+                                    <li><a href="https://research.parliament.mn/">Хүрээлэнгийн мэдээллийн сан</a></li>
+                                    <!-- <li><a href="my-ebook-library.html">Ebook Library</a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="f_widget link_widget">
-                                <h2 class="f_widget_title">Contacs Us</h2>
+                                <h2 class="f_widget_title">Холбоо барих</h2>
                                 <ul class="list-unstyled list">
-                                    <li><a href="tel:610383766284"><i class="fa-solid fa-phone-volume"></i>+61 (0) 3
-                                            8376 6284</a></li>
-                                    <li><a href="mailto:noreply@bookjar.com"><i
-                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li>
+                                    <li><a href="tel:51262988"><i class="fa-solid fa-phone-volume"></i>+51-262988</a>
+                                    </li>
+                                    <li>
+                                        <p style=" font-size: 14px;">
+                                            Монгол Улсын Их Хурлын Тамгын газар. Монгол Улс 14201 Улаанбаатар хот,
+                                            Сүхбаатар
+                                            дүүрэг, Жанжин Д.Сүхбаатарын талбай 1, Төрийн ордон.
+                                        </p>
+                                    </li>
+                                    <!-- <li><a href="mailto:noreply@bookjar.com"><i
+                                                        class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
                                 </ul>
                                 <ul class="list-unstyled f_social_round">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        
                                 </ul>
                             </div>
                         </div>
+        
                     </div>
-                </div>
-                <div class="footer_bottom d-flex  justify-content-center">
-                    <p>© 2024 Bookjar. All Rights Reserved</p>
+                    <div class="footer_bottom d-flex  justify-content-center">
+                        <p>© 2025 Парламентын номын сан. Бүх эрх хуулиар хамгаалагдсан.</p>
+                    </div>
                 </div>
             </div>
         </footer>

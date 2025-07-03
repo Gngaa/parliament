@@ -7190,6 +7190,16 @@ input::-webkit-inner-spin-button {
   position: relative;
   margin-top: 10px;
 }
+.product_sidbar ul .product_sub_sidebar li {
+  padding-left: 4px;
+  font-size: 12px;
+  color: #4d4e50;
+  position: relative;
+  margin-top: 10px;
+}
+.product_sidbar ul .product_sub_sidebar li.nav-item .nav-link{
+  padding: 2px;
+}
 .product_sidbar ul li .icon {
   position: absolute;
   left: 0;

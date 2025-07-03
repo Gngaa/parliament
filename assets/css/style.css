@@ -2406,13 +2406,13 @@ ul.ordered-list li::before {
   right: 13%;
 }
 .advanced_search_form.search_form .bj_theme_btn{
- padding:11px ;
+ padding:12px ;
  font-size:11px;
  white-space: nowrap;
- overflow: unset;
+ width:15%;
 }
-.advanced_search_form.search_form button.bj_theme_btn{
-  border-radius: 4px;
+.advanced_search_form.search_form .bj_theme_btn{
+  border-radius: 4px !important;
 }
 .clients_logo_inner {
   display: flex;
@@ -4749,9 +4749,9 @@ ul.ordered-list li::before {
 .cta-area-7 .search_form .form-control {
   border-radius: 5px;
 }
-.cta-area-7 .search_form .bj_theme_btn {
+/* .cta-area-7 .search_form .bj_theme_btn {
   border: 0px;
-}
+} */
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/

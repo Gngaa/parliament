@@ -2365,7 +2365,7 @@ ul.ordered-list li::before {
   border: 0px;
   color: #202124;
   height: auto;
-  padding: 15px 20px;
+  padding: 8px;
   line-height: 30px;
 }
 .search_form .form-control.placeholder {
@@ -2392,7 +2392,7 @@ ul.ordered-list li::before {
   height: 40px;
   font-size: 18px;
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 10px;
   border-radius: 50%;
   transition: all 0.2s linear;
@@ -2403,10 +2403,11 @@ ul.ordered-list li::before {
   color: #fff;
 }
 .advanced_search_form.search_form .search_btn{
-  right: 15%;
+  right: 13%;
 }
 .advanced_search_form.search_form .bj_theme_btn{
- padding:20px 8px ;
+ padding:11px ;
+ font-size:11px;
  white-space: nowrap;
  overflow: unset;
 }

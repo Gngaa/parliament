@@ -220,6 +220,7 @@
                 </div>
             </nav>
         </header>
+
         <div class="cart-header-separator"></div>
 
 
@@ -241,9 +242,9 @@
                             </div>
                             <div class="sidebar_widget_body p-0">
                                 <ul class="sidebar_widget_menu">
-                                    <li><a class="active " href="user.html">Хураангуй</a></li>
+                                    <li><a href="user.html">Хураангуй</a></li>
                                     <li><a href="my-account.html">Хувийн мэдээлэл</a></li>
-                                    <li><a href="newbook.html"> Шинэ номын хүсэлт</a></li>
+                                    <li><a class="active " href="newbook.html"> Шинэ номын хүсэлт</a></li>
                                     <li><a href="my-pass.html">Нууц үг шинэчлэх</a></li>
                                     <li><a href="history.html">Уншсан номын түүх</a></li>
                                     <li><a href="my-list.html">Жагсаалт</a></li>
@@ -255,62 +256,96 @@
 
                     </div>
                     <div class="col-lg-9">
-                        <div class="account_dashboard_body">
-                            <div class="account_dashboard_content">
-                                <div class="account_dashboard_content_header d-flex justify-content-between align-items-center">
-                                    <div>
-                                        Хураангуй
+                        <div class="bj_checkout_content me-0 mt-20">
+                            <div class="content_header">
+                                 Шинэ номын хүсэлт
+                                <!-- <span>(Please Fill Out Your Information)</span> -->
+                            </div>
+                            <div class="content_body">
+                             <!--    <div class="porduct_pickup_location_wrapper mb-3">
+                                    Pick up your parcel from:
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="porduct_pickup_location"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Home
+                                        </label>
                                     </div>
-
-                                    <!-- <a href="add-new-address.html" class="bj_theme_btn">Хүсэлт нэмэх</a> -->
-
-                                </div>
-                                <div class="content_body">
-                                    <div class="row gy-3 my_address_book_list">
-                                        <div class="col-lg-12">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead class="bg-light">
-                                                        <tr>
-                                                            <th scope="col">Номын нэр</th>
-                                                            <th scope="col">Зохиогч</th>
-                                                            <th scope="col">Огноо</th>
-                                                            <th scope="col">Баркод</th>
-                                                            <th scope="col">Торгуультай эсэх</th>
-                                                           
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                               Бэлэгдэлт амьдрал
-                                                            </td>
-                                                            <td>Юнг К.Г.</td>
-                                                            <td>12/17/2024</td>
-
-                                                            <td>0123456789</td>
-                                                            <td><span class="office_label">Тийм</span></td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                Ардчилсан үндсэн хууль тогтоогчид
-                                                            </td>
-                                                            <td>Дашням Л</td>
-                                                            <td>12/17/2024</td>
-
-                                                            <td>0123456789</td>
-                                                            <td><span class="home_label">Үгүй</span></td>
-                                                            
-                                                        </tr>
-                                                   
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                        </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="porduct_pickup_location"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Office
+                                        </label>
                                     </div>
-                                </div>
+                                </div> -->
+                                <form class=" row gy-3" action="#" method="post">
+                                    <div class="col-md-12 form-group">
+                                        <input type="text" class="form-control" id="name" required>
+                                        <label class="floating-label">Номын нэр *</label>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input type="text" class="form-control" id="name" required>
+                                        <label class="floating-label">Зохиогч *</label>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input type="text" class="form-control" id="name" required>
+                                        <label class="floating-label">Хэвлэгдсэн он </label>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input type="text" class="form-control" id="name" required>
+                                        <label class="floating-label">Эрхлэн гаргасан байгууллага </label>
+                                    </div>
+                                   <!--  <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control" id="phone_no" required>
+                                        <label class="floating-label">Phone No *</label>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control" id="alternative_phone_no" required>
+                                        <label class="floating-label">Alternative Phone No </label>
+                                    </div> -->
+                                  <!--   <div class="col-md-6 form-group">
+                                        <select class="selectpickers">
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Canada">Canada</option>
+                                        </select>
+                                    </div> -->
+                                    <!-- <div class="col-md-6 form-group">
+                                        <select class="selectpickers">
+                                            <option value="Select City" disabled selected="selected">Select City
+                                            </option>
+                                            <option value="Comilla">Comilla</option>
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Chittagong">Chittagong</option>
+                                            <option value="Khulna">Khulna</option>
+                                            <option value="Rajshahi">Rajshahi</option>
+                                            <option value="Rangpur">Rangpur</option>
+                                            <option value="Mymensingh">Mymensingh</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <select class="select selectpickers">
+                                            <option value="Select Area" disabled selected="selected">Select Area
+                                            </option>
+                                            <option value="Comilla">Comilla</option>
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Chittagong">Chittagong</option>
+                                            <option value="Khulna">Khulna</option>
+                                            <option value="Rajshahi">Rajshahi</option>
+                                            <option value="Rangpur">Rangpur</option>
+                                            <option value="Mymensingh">Mymensingh</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="col-md-12 form-group">
+                                        <textarea class="form-control message" required></textarea>
+                                        <label class="floating-label">Номтой холбоотой мэдээлэл</label>
+                                    </div>
+                                    <div class="col-md-12 text-start">
+                                        <button type="submit" class="bj_theme_btn">Илгээх</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -341,7 +376,7 @@
                                     <li><a href="#">Түүхэн товчоо</a></li>
                                     <li><a href="#">Бүтэц зохион байгуулалт</a></li>
                                     <li><a href="#">Хамтын ажиллагаа</a></li>
-
+        
                                 </ul>
                             </div>
                         </div>
@@ -384,17 +419,17 @@
                                         </p>
                                     </li>
                                     <!-- <li><a href="mailto:noreply@bookjar.com"><i
-                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
+                                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
                                 </ul>
                                 <ul class="list-unstyled f_social_round">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-
+        
                                 </ul>
                             </div>
                         </div>
-
+        
                     </div>
                     <div class="footer_bottom d-flex  justify-content-center">
                         <p>© 2025 Парламентын номын сан. Бүх эрх хуулиар хамгаалагдсан.</p>

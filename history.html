@@ -220,10 +220,8 @@
                 </div>
             </nav>
         </header>
+
         <div class="cart-header-separator"></div>
-
-
-        <!-- Dashboard area -->
         <section class="bj_account_dashboard" data-bg-color="#f5f5f5">
             <div class="container">
                 <div class="row">
@@ -241,14 +239,13 @@
                             </div>
                             <div class="sidebar_widget_body p-0">
                                 <ul class="sidebar_widget_menu">
-                                    <li><a class="active " href="user.html">Хураангуй</a></li>
+                                    <li><a href="user.html">Хураангуй</a></li>
                                     <li><a href="my-account.html">Хувийн мэдээлэл</a></li>
                                     <li><a href="newbook.html"> Шинэ номын хүсэлт</a></li>
                                     <li><a href="my-pass.html">Нууц үг шинэчлэх</a></li>
-                                    <li><a href="history.html">Уншсан номын түүх</a></li>
+                                    <li><a class="active " href="history">Уншсан номын түүх</a></li>
                                     <li><a href="my-list.html">Жагсаалт</a></li>
                                     <li><a href="index.html">Гарах</a></li>
-                                </ul>
                             </div>
                         </div>
 
@@ -257,59 +254,164 @@
                     <div class="col-lg-9">
                         <div class="account_dashboard_body">
                             <div class="account_dashboard_content">
-                                <div class="account_dashboard_content_header d-flex justify-content-between align-items-center">
-                                    <div>
-                                        Хураангуй
-                                    </div>
-
-                                    <!-- <a href="add-new-address.html" class="bj_theme_btn">Хүсэлт нэмэх</a> -->
-
+                                <div class="account_dashboard_content_header">
+                                   Уншсан номын түүх
                                 </div>
                                 <div class="content_body">
-                                    <div class="row gy-3 my_address_book_list">
-                                        <div class="col-lg-12">
-                                            <div class="table-responsive">
+
+                                    <ul class="nav nav-tabs justify-content-center mb-3" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active " id="NotReviewed-tab" data-bs-toggle="tab" data-bs-target="#NotReviewed" type="button" role="tab" aria-controls="NotReviewed" aria-selected="true">Уншсан номын түүх</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="Reviewed-tab" data-bs-toggle="tab" data-bs-target="#Reviewed" type="button" role="tab" aria-controls="Reviewed" aria-selected="false">Цахим ном</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="NotReviewed" role="tabpanel" aria-labelledby="NotReviewed-tab">
+                                            <div class="my_rating_reviews_list">
+                                                <div class="table-responsive">
                                                 <table class="table">
                                                     <thead class="bg-light">
                                                         <tr>
                                                             <th scope="col">Номын нэр</th>
                                                             <th scope="col">Зохиогч</th>
+                                                            <th scope="col">Дансны дугаар</th>
                                                             <th scope="col">Огноо</th>
-                                                            <th scope="col">Баркод</th>
-                                                            <th scope="col">Торгуультай эсэх</th>
-                                                           
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                               Бэлэгдэлт амьдрал
+                                                            Бэлэгдэлт амьдрал
                                                             </td>
                                                             <td>Юнг К.Г.</td>
-                                                            <td>12/17/2024</td>
+                                                            <td>21930</td>
 
-                                                            <td>0123456789</td>
-                                                            <td><span class="office_label">Тийм</span></td>
+                                                            <td>06/05/2025</td>
                                                             
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                Ардчилсан үндсэн хууль тогтоогчид
+                                                            Хууль зүйн латин-англи-орос-монгол толь
                                                             </td>
-                                                            <td>Дашням Л</td>
-                                                            <td>12/17/2024</td>
+                                                            <td>Цагаан П.</td>
+                                                            <td>21931</td>
 
-                                                            <td>0123456789</td>
-                                                            <td><span class="home_label">Үгүй</span></td>
-                                                            
+                                                            <td>06/05/2024</td>
+                                                           
+                                                           
                                                         </tr>
-                                                   
+                                                        <tr>
+                                                            <td>
+                                                            Ардчилсан үндсэн хууль тогтоогчид
+
+                                                            </td>
+                                                            <td>Дашням Л.</td>
+                                                            <td>21932</td>
+
+                                                            <td>06/05/2023</td>
+                                                           
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
 
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="Reviewed" role="tabpanel" aria-labelledby="Reviewed-tab">
+                                            <div class="owned_product_list">
+                                        <div class="my_account_book list-view">
+                                            <div class="my_account_book_img ">
+                                                <img src="assets/img/home/0.png" alt="cart">
+                                            </div>
+                                            <div class="my_account_book_content ">
+                                                <a href="product-single.html">
+                                                    <div class="my_account_book_title ">
+                                                        Монгол хэлний товч тайлбар толь
+                                                    </div>
+                                                </a>
+                                                <div class="book_rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="source">Я.Цэвэл</div>
+                                            </div>
+                                            <div class="my_account_book_action ">
+                                                <a href="http://www.googleguide.com/print/adv_op_ref.pdf" class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                                    Унших</a>
+                                               <!--  <div class="download_options">
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> Code</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> PDF</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> EPUB</a>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="my_account_book list-view">
+                                            <div class="my_account_book_img ">
+                                                <img src="assets/img/home/00.png" alt="cart">
+                                            </div>
+                                            <div class="my_account_book_content ">
+                                                <a href="product-single.html">
+                                                    <div class="my_account_book_title ">
+                                                        Тэтгэлэгт хүрэх зам
+                                                    </div>
+                                                </a>
+                                                <div class="book_rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="source">Mукеш Эсваран</div>
+                                            </div>
+                                            <div class="my_account_book_action ">
+                                                <a href="http://www.googleguide.com/print/adv_op_ref.pdf" class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                                    Унших</a>
+                                               <!--  <div class="download_options">
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> Code</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> PDF</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> EPUB</a>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="my_account_book list-view">
+                                            <div class="my_account_book_img ">
+                                                <img src="assets/img/home/none.png" alt="cart">
+                                            </div>
+                                            <div class="my_account_book_content ">
+                                                <a href="product-single.html">
+                                                    <div class="my_account_book_title ">
+                                                       Мэдээллийн технологийн төслийн удирдлага
+                                                    </div>
+                                                </a>
+                                                <div class="book_rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="source">Л.Баяр-Эрдэнэ, Э.Батцэцэг</div>
+                                            </div>
+                                            <div class="my_account_book_action ">
+                                                <a href="http://www.googleguide.com/print/adv_op_ref.pdf" class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                                    Унших</a>
+                                               <!--  <div class="download_options">
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> Code</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> PDF</a>
+                                                    <a href="http://www.googleguide.com/print/adv_op_ref.pdf" download><i class="icon_download"></i> EPUB</a>
+                                                </div> -->
+                                            </div>
                                         </div>
                                     </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -318,11 +420,8 @@
                 </div>
             </div>
         </section>
-        <!-- Dashboard area -->
-
-
         <!-- footer area -->
-        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1E398D">
+         <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1E398D">
             <div class="footer-container">
                 <div class="footer_top">
                     <div class="row">
@@ -341,7 +440,7 @@
                                     <li><a href="#">Түүхэн товчоо</a></li>
                                     <li><a href="#">Бүтэц зохион байгуулалт</a></li>
                                     <li><a href="#">Хамтын ажиллагаа</a></li>
-
+        
                                 </ul>
                             </div>
                         </div>
@@ -384,17 +483,17 @@
                                         </p>
                                     </li>
                                     <!-- <li><a href="mailto:noreply@bookjar.com"><i
-                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
+                                                        class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
                                 </ul>
                                 <ul class="list-unstyled f_social_round">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-
+        
                                 </ul>
                             </div>
                         </div>
-
+        
                     </div>
                     <div class="footer_bottom d-flex  justify-content-center">
                         <p>© 2025 Парламентын номын сан. Бүх эрх хуулиар хамгаалагдсан.</p>
@@ -413,7 +512,14 @@
     <script src="assets/js/preloader.js"></script>
     <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendors/parallax/parallax.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/js/comming-soon.js"></script>
+    <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/parallax/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js"></script>
     <script src="assets/vendors/wow/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
 

@@ -8567,7 +8567,7 @@ min-height: auto;
   background-color: #f9f9f9;
   padding: 13px 20px;
   color: #17161a;
-  font-size: 20px;
+  font-size: 16px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -8817,7 +8817,7 @@ min-height: auto;
   color: #4285F4;
 }
 .account_dashboard_sidebar .sidebar_widget_menu a.active {
-  background: linear-gradient(90deg, #fff 0, #bad4ff);
+  /*background: linear-gradient(90deg, #fff 0, #bad4ff);*/
   color: #4285f4;
 }
 .account_dashboard_sidebar .sidebar_rating_review {
@@ -8919,7 +8919,7 @@ min-height: auto;
 }
 .account_dashboard_content .account_dashboard_content_title h4 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 .account_dashboard_content .account_dashboard_content_title p {

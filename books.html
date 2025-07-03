@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/elagent-icon/style.css" rel="stylesheet">
+    <link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendors/icomoon/style.css" rel="stylesheet">
+    <link href="assets/vendors/themify-icon/themify-icons.css" rel="stylesheet">
+    <link href="assets/vendors/animation/animate.css" rel="stylesheet">
+    <link href="assets/vendors/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/vendors/ui-fliter/jquery-ui.css" rel="stylesheet">
+    <link href="assets/vendors/nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <title>Bookjar</title>
+</head>
+
+<body data-scroll-animation="true">
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="assets/img/logob.png" alt="Image" />
+                    <!-- <h5><span>Парламентын номын сан</span></h5> -->
+                </div>
+            </div>
+            <!-- <h2 class="head">Did You Know?</h2> -->
+            <p></p>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class=" modal-content" style="width:85%;">
+                <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal"
+                    style="z-index: 9999;" aria-label="Close"></button>
+
+                <div class="modal-body p-0">
+                    <div class="login-modal login-wrapper">
+                        <div class="login-left">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href=" index.html" style="margin-bottom: 10px;">
+                                    <img src="assets/img/home/logob.png" style="color: #1E398D;" alt="Image">
+                                </a>
+                            </div>
+
+                            <form action="#">
+                                <div class="input-field">
+                                    <input type="email" class="form-control" placeholder="Нэр">
+                                </div>
+                                <div class="input-field pass-field-with-icon">
+                                    <input type="password" class="form-control" id="toggle_passowrd_field"
+                                        placeholder="Нууц үг">
+                                    <i data-toggle-target="#toggle_passowrd_field"
+                                        class="icon fas fa-eye toggle-password"></i>
+                                </div>
+
+                                <div class="input-field">
+                                    <button type="submit" class="bj_theme_btn w-100 border-0">Нэвтрэх</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_wrapper">
+        <div class="toast-container position-fixed p-3">
+            <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Cart Update</strong>
+                    <small>just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Item added to the cart!
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade product-quickview-modal" id="productQuickView" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="icon_close"></i></button>
+                    <div class="bj_book_single">
+                        <div class="bj_book_img flip">
+                            <div class="front"><img class="img-fluid" src="assets/img/05.png" alt="">
+                            </div>
+                            <div class="back"><img class="img-fluid" src="assets/img/book-single.jpg" alt=""></div>
+                            <div class="pr_ribbon">
+                                <!-- <span class="product-badge">New</span> -->
+                            </div>
+                        </div>
+                        <div class="bj_book_details">
+                            <h2>Үүргийн эрх зүйн ерөнхий анги</h2>
+                            <ul class="list-unstyled book_meta">
+                                <li>Зохиогч:<a href="author-single.html">Буянхишиг Б</a></li>
+                                <!--  <li>Category:<a href="shop-sidebar.html">Drama</a></li>
+                                <li>Tag:<a href="shop-sidebar.html">Best Sellers</a></li> -->
+                            </ul>
+                            <div class="ratting review">
+                                <div class="star-rating">
+                                    <span>4.9</span>
+                                </div>
+                                <!--  <a href="#product_review" class="woocommerce-review-link">
+                                    <span class="count"> 50 </span>Reviews
+                                </a> -->
+                            </div>
+                            <!-- <div class="price">$10</div> -->
+                            <!-- <p>Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed
+                                quia consequuntur.</p> -->
+                            <ul class="product_meta list-unstyled">
+                                <li><span>Хэвлэлийн газар:</span>LIAPub</li>
+                                <li><span>Хэвлэгдсэн он:</span>2017</li>
+                                <li><span>Хуудасны тоо:</span>272</li>
+                                <li><span>ISBN:</span>978-99962-2-373-0</li>
+                                <li><span>Хэл:</span>Монгол</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <header class="header_area header_relative header_blue">
+            <nav class="navbar navbar-expand-lg menu_one menu_white" id="header">
+                <div class="header-container">
+                    <a class="navbar-brand sticky_logo" href="index.html">
+                        <img src="assets/img/home/logo.png" alt="logo" style />
+                        <img src="assets/img/home/logob.png" alt="logo" />
+                        <div class="logo_text">
+                            <!-- <span>ПАРЛАМЕНТЫН СУДАЛГАА,</span> -->
+                            <!-- <span>ХӨГЖЛИЙН ХҮРЭЭЛЭН</span> -->
+                            <span>ПАРЛАМЕНТЫН</span>
+                            <span>НОМЫН САН</span>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu w_menu ms-auto me-auto">
+                            <li class="nav-item  dropdown submenu ">
+                                <a class="nav-link dropdown-toggle" href="books.html" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ном
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Чуулганы танилцуулга</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="shop.html" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Сэтгүүл
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item dropdown ">
+                                        <a class="nav-link " href="shop.html" role="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Эрдэм шинжилгээний сэтгүүл
+                                        </a>
+                                        <!-- <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop.html" class="nav-link">Эрдэм шинжилгээний сэтгүүл</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="product-single.html" class="nav-link">Product Details</a>
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="cart.html" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Төрийн мэдээлэл
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="cart-guest.html" class="nav-link">Тусгай дугаар</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--     <li class="nav-item dropdown submenu">
+                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Checkout
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">Checkout</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item  dropdown submenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Судалгаа
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Судалгааны эмхэтгэл</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item  dropdown submenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Сонин
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Монголын үнэн</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="my-account.html" class="nav-link">Зууны мэдээ</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                        <div class="alter_nav">
+
+                        </div>
+
+                        <button type="button" class="bj_theme_btn strock_btn hidden-sm hidden-xs" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <i class=" fa-regular fa-user"></i> Нэвтрэх
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <!-- shop area  -->
+        <section class="bj_shop_area sec_padding" data-bg-color="#f5f5f5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="shop_sidebar">
+                            <div class="widget filter_widget">
+                                <h3 class="shop_sidebar_title"><a href="#"><img src="assets/img/shop/filter.svg"
+                                            alt=""></a>Шүүлтүүр</h3>
+                            </div>
+                            <div class="widget shop_category_widget">
+                                <h4 class="shop_sidebar_title_small"><i class="icon-category-icon"></i>Материалын төрөл
+                                </h4>
+                                <ul class="list-unstyled shop_category_list">
+                                    <li><a href="#">Ном</a></li>
+                                    <li><a href="#">Тогтмол хэвлэл</a></li>
+                                    <li><a href="#">Цахим ном</a></li>
+                                    <li><a href="#">Лавлагаа</a></li>
+
+                                </ul>
+                                <div class="collapse" id="collapseExample">
+                                    <ul class="list-unstyled shop_category_list">
+                                        <li><a href="#">Default</a></li>
+                                        <li><a href="#">Default</a></li>
+                                        <li><a href="#">Default</a></li>
+                                        <li><a href="#">Default</a></li>
+                                    </ul>
+                                </div>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Бүгдийг үзэх <i class="ti-angle-down"></i>
+                                </a>
+                            </div>
+                            <div class="widget author_widget">
+                                <h4 class="shop_sidebar_title_small"><i class="icon-pen"></i>Зохиогч</h4>
+                                <div class="author_choose_list">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="burt" id="burt"
+                                            value="burt">
+                                        <label class="form-check-label" for="burt">Доржготов</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="candy" id="candy"
+                                            value="candy">
+                                        <label class="form-check-label" for="candy">Default </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="drew" id="drew"
+                                            value="drew">
+                                        <label class="form-check-label" for="drew">Default </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="karen" id="karen"
+                                            value="karen">
+                                        <label class="form-check-label" for="karen">Default </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="richard" id="richard"
+                                            value="richard">
+                                        <label class="form-check-label" for="richard">Default </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget author_widget">
+                                <h4 class="shop_sidebar_title_small"><i class="fa-regular fa-star"></i>Үнэлгээ</h4>
+                                <div class="author_choose_list">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="rating_filter"
+                                            id="5_star_filter" value="5 star">
+                                        <label class="form-check-label" for="5_star_filter">
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="rating_filter"
+                                            id="4_star_filter" value="5 star">
+                                        <label class="form-check-label" for="4_star_filter">
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="rating_filter"
+                                            id="3_star_filter" value="5 star">
+                                        <label class="form-check-label" for="3_star_filter">
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="rating_filter"
+                                            id="2_star_filter" value="5 star">
+                                        <label class="form-check-label" for="2_star_filter">
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="rating_filter"
+                                            id="1_star_filter" value="1 star">
+                                        <label class="form-check-label" for="1_star_filter">
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star filled"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="widget price_widget">
+                                <h4 class="shop_sidebar_title_small"><i class=""></i>Хэвлэгдсэн он</h4>
+                                <div id="slider-range" data-price-min="1950" data-price-max="2025"></div>
+                                <div class="price-filters d-flex justify-content-between">
+                                    <div class="left">
+                                        <label for="price-filter-min"></label>
+                                        <input type="number" id="price-filter-min" placeholder=230
+                                            aria-label="Minimum price for filtering products">
+                                    </div>
+                                    <div class="right">
+                                        <label for="price-filter-max"
+                                            aria-label="Maximum price for filtering products"></label>
+                                        <input type="number" id="price-filter-max" placeholder=1233>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <form role="search" method="get" class="pr_search_form input-group" action="#">
+                            <input type="text" name="s" value="" class="form-control search-field" id="search"
+                                placeholder="Хайх үгээ оруулна уу...">
+                            <button type="submit"><i class="ti-search"></i></button>
+                        </form>
+                        <div class="shop_top d-flex align-items-center justify-content-between">
+                            <div class="shop_menu_left">Илэрц: 120</div>
+                            <div class="shop_menu_right d-flex align-items-center justify-content-end">
+
+                                <form class="woocommerce-ordering" method="get">
+                                    <select name="orderby" class="orderby selectpickers">
+                                        <option value="menu_order" selected='selected'>Эрэмбэлэх</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by latest</option>
+
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book1.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <a href="https://koha.looper.mn/uploads/41/index.html"
+                                            class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                            Унших</a>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">A Storytelling Workbook</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book2.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <a href="https://koha.looper.mn/uploads/41/index.html"
+                                            class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                            Унших</a>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Ruthless ..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book3.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <a href="https://koha.looper.mn/uploads/41/index.html"
+                                            class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                            Унших</a>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Psychology of..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book4.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <a href="https://koha.looper.mn/uploads/41/index.html"
+                                            class="bj_theme_btn strock_btn gallerypdf"><i class="fa-regular fa-eye"></i>
+                                            Унших</a>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">Your Next Five Moves</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book1.jpg" alt="book"></a>
+                                        <!-- <div class="pr_ribbon">
+                                            <span class="product-badge">New</span>
+                                        </div> -->
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="A Storytelling Workbook"
+                                            data-img="assets/img/author_book1.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">A Storytelling Workbook</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book2.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="The Ruthless"
+                                            data-img="assets/img/author_book2.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Ruthless ..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book3.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="The Psychology of.."
+                                            data-img="assets/img/author_book3.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Psychology of..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book4.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="Your Next Five Moves"
+                                            data-img="assets/img/author_book4.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">Your Next Five Moves</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book1.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="A Storytelling Workbook"
+                                            data-img="assets/img/author_book1.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">A Storytelling Workbook</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book2.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="The Ruthless"
+                                            data-img="assets/img/author_book2.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Ruthless ..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book3.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="The Psychology of.."
+                                            data-img="assets/img/author_book3.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">The Psychology of..</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6 projects_item">
+                                <div class="best_product_item best_product_item_two shop_product">
+                                    <div class="img">
+                                        <a href="#"><img src="assets/img/author_book4.jpg" alt="book"></a>
+
+                                        <div class="hover_item">
+                                            <a class="quick_button" href="#" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" title="Жагсаалтанд хадгалах"><i
+                                                    class="icon_heart_alt"></i></a>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Quickview"><button class="quick_button" data-bs-toggle="modal"
+                                                    data-bs-target="#productQuickView"><i
+                                                        class="arrow_move"></i></button></span>
+                                            <!-- <a class="quick_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Compare"><i class="ti-control-shuffle"></i></a> -->
+                                        </div>
+                                        <button type="button" class="bj_theme_btn " data-name="Your Next Five Moves"
+                                            data-img="assets/img/author_book4.jpg" data-price="25" data-mrp="120">
+                                            <i class="fa-regular fa-eye"></i>Унших
+                                        </button>
+                                    </div>
+                                    <div class="bj_new_pr_content">
+                                        <a href="product-single.html">
+                                            <h4 class="bj_new_pr_title">Your Next Five Moves</h4>
+                                        </a>
+                                        <div class="bj_pr_meta d-flex">
+                                            <!-- <div class="book_price"><del>120</del>$25</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-center">
+                            <nav aria-label="...">
+                                <ul class="pagination pagi-content">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="ti-angle-left"></i></a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="ti-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shop area  -->
+
+        <!-- footer area css  -->
+        <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1E398D">
+            <div class="footer-container">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-6 justify-content-center d-flex align-items-center">
+                            <div class=" text-center ">
+                                <a href=" #" class="footer_logo">
+                                    <img src="assets/img/home/soyombo_white.svg" alt="f_logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Бидний тухай</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="#">Мэндчилгээ</a></li>
+                                    <li><a href="#">Түүхэн товчоо</a></li>
+                                    <li><a href="#">Бүтэц зохион байгуулалт</a></li>
+                                    <li><a href="#">Хамтын ажиллагаа</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Судалгаа</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="#">Судалгааны тайлан</a></li>
+                                    <li><a href="#">Судалгааны эмхэтгэл</a></li>
+                                    <li><a href="#">Мэдээллийн хуудас</a></li>
+                                    <li><a href="#">Эрдэм шинжилгээний сэтгүүл</a></li>
+                                    <!-- <li><a href="#">Wishlist</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Чухал холбоос</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="#">Монгол улсын Их Хурал</a></li>
+                                    <li><a href="#">Хуулийн сан</a></li>
+                                    <li><a href="#">Хууль зүйн үндэсний хүрээлэн</a></li>
+                                    <li><a href="https://training.parliament.mn/">Сургалтын цахим систем</a></li>
+                                    <li><a href="https://research.parliament.mn/">Хүрээлэнгийн мэдээллийн сан</a></li>
+                                    <!-- <li><a href="my-ebook-library.html">Ebook Library</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="f_widget link_widget">
+                                <h2 class="f_widget_title">Холбоо барих</h2>
+                                <ul class="list-unstyled list">
+                                    <li><a href="tel:51262988"><i class="fa-solid fa-phone-volume"></i>+51-262988</a>
+                                    </li>
+                                    <li>
+                                        <p style=" font-size: 14px;">
+                                            Монгол Улсын Их Хурлын Тамгын газар. Монгол Улс 14201 Улаанбаатар хот,
+                                            Сүхбаатар
+                                            дүүрэг, Жанжин Д.Сүхбаатарын талбай 1, Төрийн ордон.
+                                        </p>
+                                    </li>
+                                    <!-- <li><a href="mailto:noreply@bookjar.com"><i
+                                                class="fa-solid fa-envelope"></i>noreply@bookjar.com</a></li> -->
+                                </ul>
+                                <ul class="list-unstyled f_social_round">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer_bottom d-flex  justify-content-center">
+                        <p>© 2025 Парламентын номын сан. Бүх эрх хуулиар хамгаалагдсан.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/parallax/parallax.js"></script>
+    <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/parallax/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/ui-fliter/jquery-ui.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

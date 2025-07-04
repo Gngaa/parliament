@@ -127,8 +127,8 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                     Сэтгүүл
                                 </a>
 
@@ -138,17 +138,7 @@
                                             aria-haspopup="true" aria-expanded="false">
                                             Эрдэм шинжилгээний сэтгүүл
                                         </a>
-                                        <!-- <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="shop.html" class="nav-link">Эрдэм шинжилгээний сэтгүүл</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="shop-no-sidebar.html" class="nav-link">Shop No Sidebar</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="product-single.html" class="nav-link">Product Details</a>
-                                            </li>
-                                        </ul> -->
+
                                     </li>
                                     <li class="nav-item dropdown submenu">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -161,23 +151,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <!--     <li class="nav-item dropdown submenu">
-                                        <a class="nav-link dropdown-toggle" href="checkout.html" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Checkout
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="checkout.html" class="nav-link">Checkout</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="checkout-login.html" class="nav-link">Checkout Login</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="checkout-gift.html" class="nav-link">Checkout Gift</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
+
                                 </ul>
                             </li>
                             <li class="nav-item  dropdown submenu ">
@@ -223,35 +197,127 @@
         <!-- banner area  -->
         <section class="hero-section">
             <div class="hero-section-wrapper">
-                <div class="hero-section-video">
-                    <video class="hero-section-video-cover" autoplay loop playsinline muted>
-                        <source data-v-4a9b5899=""
-                            src="https://cdn.prod.website-files.com/66c75d57c5c045d15a7781e0/66e09984e21fadc7bbcf416c_tetra-data-slomo2-transcode.webm"
-                            type="video/webm">
-                        <source data-v-4a9b5899=""
-                            src="https://cdn.prod.website-files.com/66c75d57c5c045d15a7781e0/66e09984e21fadc7bbcf416c_tetra-data-slomo2-transcode.mp4"
-                            type="video/mp4"></video>
-                    <div data-v-4a9b5899="" class="hero-section-video-overlay"></div>
-                </div>
-                <div class="search-banner">
-                </div>
-                <div class="hero-section-search-relative">
-                    <div class="container-fluid mx-auto text-center mb-5" style="max-width: 1280px;color:#2856A8">
-                        <h2>ПАРЛАМЕНТЫН НОМЫН САН</h2>
+                <form method="post" name="advsearch" autocomplete="off" class="bj_new_pr_item_two">
+                    <h5 class="mb-4">Дэлгэрэнгүй хайлт</h5>
+                    <div class="container py-2">
+
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <select name="category_id" class="form-select">
+                                    <option value="all" selected>Бүгд</option>
+                                    <option value="catalog">Каталог</option>
+                                    <option value="title">Номын нэр</option>
+                                    <option value="author">Зохиогч</option>
+                                    <option value="isbn">ISBN</option>
+                                    <option value="issn">ISSN</option>
+                                </select>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="title" class="form-control"
+                                    placeholder="Хайх үгээ энд оруулна уу">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label d-block">Материалын төрөл:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="3" name="havsralt">
+                                    <label class="form-check-label" for="3">Холимог материал</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="2" name="nemelt">
+                                    <label class="form-check-label" for="2">Хөгжим</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="10" name="anh">
+                                    <label class="form-check-label" for="10">Харааны материал</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="11" name="english">
+                                    <label class="form-check-label" for="11">Газрын зураг</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="11" name="english">
+                                    <label class="form-check-label" for="11">Лавлагаа</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="11" name="english">
+                                    <label class="form-check-label" for="11">Ном</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="11" name="english">
+                                    <label class="form-check-label" for="11">Тогтмол хэвлэл</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="11" name="english">
+                                    <label class="form-check-label" for="11">Файлууд</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Хэл:</label>
+                                <select name="word_field" class="form-select">
+                                    <option value="all">Бүгд</option>
+                                    <option value="only_title">English</option>
+                                    <option value="only_body">Mongolian</option>
+                                    <option value="only_body">Russian</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Эрэмлблэлт:</label>
+                                <select class="form-select" name="word_field">
+                                    <option value="relevance">Relevance</option>
+                                    <optgroup label="Popularity">
+                                        <option value="popularity_dsc">Popularity (most to least)</option>
+                                        <option value="popularity_asc">Popularity (least to most)</option>
+                                    </optgroup>
+                                    <optgroup label="Author">
+                                        <option value="author_az">Author (A-Z)</option>
+                                        <option value="author_za">Author (Z-A)</option>
+                                    </optgroup>
+                                    <optgroup label="Call number">
+                                        <option value="call_number_asc">Call number (0-9 to A-Z)</option>
+                                        <option value="call_number_dsc">Call number (Z-A to 9-0)</option>
+                                    </optgroup>
+                                    <optgroup label="Dates">
+                                        <option value="pubdate_dsc">Publication/Copyright date: Newest to oldest
+                                        </option>
+                                        <option value="pubdate_asc">Publication/Copyright date: Oldest to newest
+                                        </option>
+                                        <option value="acqdate_dsc">Acquisition date: Newest to oldest</option>
+                                        <option value="acqdate_asc">Acquisition date: Oldest to newest</option>
+                                    </optgroup>
+                                    <optgroup label="Title">
+                                        <option value="title_az">Title (A-Z)</option>
+                                        <option value="title_za">Title (Z-A)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Хэвлэгдсэн огноо:</label>
+                                <div class="d-flex gap-2">
+                                    <input type="text" name="b_date_start" class="form-control date-picker"
+                                        placeholder="Эхлэх огноо">
+                                    <input type="text" name="b_date_end" class="form-control date-picker"
+                                        placeholder="Дуусах огноо">
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-12 mt-4 text-end" style="float: left;">
+                                <button type="submit" class="btn btn-primary me-2">Хайх</button>
+                                <button type="reset" class="btn btn-secondary">Цуцлах</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hero-section-search-container">
-              
-                    </div>
-                </div>
+                </form>
             </div>
         </section>
-        
+
         <section class="best_selling_pr_area sec_padding">
             <div class="container">
-             
 
-                
-                
             </div>
         </section>
         <footer class="bj_footer_area_two bj_footer_area_four" data-bg-color="#1E398D">
